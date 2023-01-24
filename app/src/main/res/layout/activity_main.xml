@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewOnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World! On Create"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        app:layout_constraintBottom_toTopOf="@+id/buttonNext"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOnDestroy"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/textViewOnDestroy"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnDestroy" />
+
+    <TextView
+        android:id="@+id/textViewOnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World! On Start"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOnPause"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOnCreate"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/textViewOnCreate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnCreate" />
+
+    <TextView
+        android:id="@+id/textViewOnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World! On Pause"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOnStop"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOnStart"
+        app:layout_constraintStart_toStartOf="@+id/textViewOnStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnStart" />
+
+    <TextView
+        android:id="@+id/textViewOnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World! On Stop"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOnDestroy"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOnPause"
+        app:layout_constraintStart_toStartOf="@+id/textViewOnPause"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnPause" />
+
+    <TextView
+        android:id="@+id/textViewOnDestroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World! On Destroy"
+        app:layout_constraintBottom_toTopOf="@+id/buttonTest"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOnStop"
+        app:layout_constraintStart_toStartOf="@+id/textViewOnStop"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnStop" />
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonTest"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonTest"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTest" />
+
+    <TextView
+        android:id="@+id/textViewOnRestart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Hello World! On restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewOnResume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:text="Hello World! On resume"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOnPause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/textViewOnStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOnStart"
+        app:layout_constraintVertical_bias="0.51" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

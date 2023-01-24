@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Result">
+
+    <Button
+        android:id="@+id/buttonToMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:text="To Main"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonSetText"
+        app:layout_constraintStart_toStartOf="@+id/buttonSetText"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSetText" />
+
+    <Button
+        android:id="@+id/buttonSetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Text"
+        app:layout_constraintBottom_toTopOf="@+id/buttonToMain"
+        app:layout_constraintEnd_toEndOf="@+id/textViewORe"
+        app:layout_constraintStart_toStartOf="@+id/textViewORe"
+        app:layout_constraintTop_toBottomOf="@+id/textViewORe" />
+
+    <TextView
+        android:id="@+id/textViewORe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW! On Restart"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSetText"
+        app:layout_constraintEnd_toEndOf="@+id/textViewODe"
+        app:layout_constraintStart_toStartOf="@+id/textViewODe"
+        app:layout_constraintTop_toBottomOf="@+id/textViewODe" />
+
+    <TextView
+        android:id="@+id/textViewOStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW! On Stop"
+        app:layout_constraintBottom_toTopOf="@+id/textViewODe"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOPa"
+        app:layout_constraintStart_toStartOf="@+id/textViewOPa"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOPa" />
+
+    <TextView
+        android:id="@+id/textViewOPa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW! On Pause"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOStop"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOSt"
+        app:layout_constraintStart_toStartOf="@+id/textViewOSt"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOSt" />
+
+    <TextView
+        android:id="@+id/textViewOSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW! On Start"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOPa"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOCr"
+        app:layout_constraintStart_toStartOf="@+id/textViewOCr"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOCr" />
+
+    <TextView
+        android:id="@+id/textViewOCr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW! On Create"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOSt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewODe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HW! On Destroy"
+        app:layout_constraintBottom_toTopOf="@+id/textViewORe"
+        app:layout_constraintEnd_toEndOf="@+id/textViewOStop"
+        app:layout_constraintStart_toStartOf="@+id/textViewOStop"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOStop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
